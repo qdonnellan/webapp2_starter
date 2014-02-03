@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- add a title block to each child template, it will be inserted below -->
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- JQuery and Bootstrap js -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <!-- Twitter Bootstrap CSS and our own custom.css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/public.css">
+
+    <!-- Google Webfonts and Font Awesome -->
+    <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width"/>
+  </head>
+  <body>
+    <!-- your body content here -->
+    {% block body %}{% endblock %}
+
+    <!-- If you have your own js scripts, put them inside the public-app.js file -->
+    <script src="/js/public-app.js"></script>
+  </body>
+</html>

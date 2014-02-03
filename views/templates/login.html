@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %} Login Page {% endblock %}
+
+{% block body %}
+
+  <div class="container">
+    <h1>Login</h1>
+    <hr>
+    {% if not users.get_current_user() %}
+      <p> You are not logged in</p>
+      <p>
+        <a href="{{users.create_login_url('/login')}}" class="btn btn-lg btn-primary">Login</a>
+      </p>
+    {% else %}
+      <p> Welcome {{ users.get_current_user().nickname() }}</p>
+      <p>
+        <a href="{{users.create_logout_url('/login')}}" class="btn btn-lg btn-theme btn-primary">Logout</a>
+      </p>
+    {% endif %}
+  </div>
+
+{% endblock %}
