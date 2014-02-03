@@ -1,4 +1,5 @@
 # Webapp2 Starter Kit
+* Goal: get a working python app up on GAE in less than 1 minute*
 
 The point of this project is to provide a starter kit for developers looking to deploy to Google App Engine in very little time. All you need to do to have your own webapp up and running is to:
 
