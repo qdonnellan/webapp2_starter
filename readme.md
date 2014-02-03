@@ -21,24 +21,24 @@ This webapp uses Jinja2 for a lightweight templating experience.
 ## CSS (Bootstrap)
 Bootstrap is included in the base template as a link to the bootstrap CDN
 
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
   
 You may wish to customize your style on top of bootstrap, just edit the css file located your static css folder
 
-  /public
-    /static
-      /css
-        public.css
+    /public
+      /static
+        /css
+          public.css
 
 ## Javascript/JQuery
 JQuery is already included as a link to the Google CDN on the base template
   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 You may wish to add your own javascript, just add your js scripts to the public-app.js file
 
-  /public
-    /static
-      /js
-        public-app.js
+    /public
+      /static
+        /js
+          public-app.js
 
